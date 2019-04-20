@@ -1,7 +1,6 @@
-FROM fanningert/aria2-daemon
+FROM kingedgar/aria2-daemon
 
-MAINTAINER fanningert <thomas@fanninger.at>
-
+MAINTAINER kingedgar <kingedgar@gmail.com>
 RUN apk update && \
 	apk add wget libarchive-tools && \
         mkdir -p /aria2-webui && \
