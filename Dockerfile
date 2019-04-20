@@ -13,4 +13,7 @@ ADD root/ /
 
 RUN chmod -v +x /etc/services.d/*/run /etc/cont-init.d/*
 
+VOLUME ["/download"]
+VOLUME ["/conf"]
+VOLUME ["/finished"]
 EXPOSE 8989
