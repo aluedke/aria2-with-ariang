@@ -1,6 +1,6 @@
 FROM kingedgar/aria2-daemon
 
-MAINTAINER kingedgar <kingedgar@gmail.com>
+LABEL maintainer="kingedgar@gmail.com"
 RUN apk update && \
 	apk add wget libarchive-tools && \
         mkdir -p /aria2-webui && \
