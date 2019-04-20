@@ -10,20 +10,20 @@ Move file completed to another folder.
 I. replace **/DOWNLOAD_DIR**, **/COMPLETED_DIR** and **/CONFIG_DIR** for save data, and **YOUR_SECRET_CODE** for security. Run command below  
 ```
 sudo docker run -d \
---name unraid-aria2-with-webui \
+--name aria2-with-ariang \
 -p 6800:6800 \
 -p 8989:8989 \
 -v /CONFIG_DIR:/conf \
 -v /DOWNLOAD_DIR:=/download \
 -v /COMPLETED_DIR:=/finished \
 -e SECRET=YOUR_SECRET_CODE \
-fanningert/unraid-aria2-with-webui
+kingedgar/aria2-with-ariang
 ```
   
-II. Open `http://serverip:6880/` for aria2-webui.  
+II. Open `http://serverip:8989/` for aria2-webui.  
 
 ### Build:  
-`sudo docker build -f Dockerfile -t fanningert/unraid-aria2-with-webui .`  
+`sudo docker build -f Dockerfile -t kingedgar/aria2-with-ariang.`  
 
 ### Link:  
 https://github.com/aria2/aria2  
