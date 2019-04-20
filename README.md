@@ -12,7 +12,7 @@ I. replace **/DOWNLOAD_DIR**, **/COMPLETED_DIR** and **/CONFIG_DIR** for save da
 sudo docker run -d \
 --name unraid-aria2-with-webui \
 -p 6800:6800 \
--p 6880:80 \
+-p 8989:8989 \
 -v /CONFIG_DIR:/conf \
 -v /DOWNLOAD_DIR:=/download \
 -v /COMPLETED_DIR:=/finished \
