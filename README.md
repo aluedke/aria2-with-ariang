@@ -7,7 +7,7 @@ Move file completed to another folder.
 (Tasks that contains more than one files will not be moved.)  
 
 ### Install
-I. replace **/DOWNLOAD_DIR**, **/COMPLETED_DIR** and **/CONFIG_DIR** for save data, and **YOUR_SECRET_CODE** for security. Run command below  
+I. replace **/DOWNLOAD_DIR** and **/CONFIG_DIR** for save data, and **YOUR_SECRET_CODE** for security. Run command below  
 ```
 sudo docker run -d \
 --name aria2-with-ariang \
@@ -15,7 +15,6 @@ sudo docker run -d \
 -p 8989:8989 \
 -v /CONFIG_DIR:/conf \
 -v /DOWNLOAD_DIR:=/download \
--v /COMPLETED_DIR:=/finished \
 -e SECRET=YOUR_SECRET_CODE \
 kingedgar/aria2-with-ariang
 ```
