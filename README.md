@@ -22,7 +22,7 @@ kingedgar/aria2-with-ariang:latest
 II. Open `http://serverip:8989/` for aria2-webui.  
 
 ### Build:  
-`sudo docker build -f Dockerfile -t kingedgar/aria2-with-ariang.`  
+`sudo docker build -f Dockerfile -t kingedgar/aria2-with-ariang:latest`  
 
 ### Link:  
 https://github.com/aria2/aria2  
