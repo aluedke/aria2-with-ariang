@@ -13,10 +13,10 @@ sudo docker run -d \
 --name aria2-with-ariang \
 -p 6800:6800 \
 -p 8989:8989 \
--v /CONFIG_DIR:/conf \
+-v /CONFIG_DIR:/config \
 -v /DOWNLOAD_DIR:=/download \
 -e SECRET=YOUR_SECRET_CODE \
-kingedgar/aria2-with-ariang
+kingedgar/aria2-with-ariang:latest
 ```
   
 II. Open `http://serverip:8989/` for aria2-webui.  
