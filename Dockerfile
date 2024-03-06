@@ -1,4 +1,4 @@
-FROM kingedgar/aria2-daemon
+FROM p3terx/aria2-pro
 
 LABEL maintainer="aluedke@gmail.com"
 RUN apk update && apk add wget libarchive-tools nodejs
